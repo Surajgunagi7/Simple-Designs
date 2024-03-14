@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy-Regular', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(Images/ImgTop.jpg);
+    background-size: cover;
+    background-position: 50% 60%;
+}
+
+#overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.242);
+}
+
+#navbar {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#navleft {
+    display: flex;
+    margin-left: 10vw;
+    align-items: center;
+}
+#navleft a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    padding: 2px;
+    background-color: orangered;
+    text-align: center;
+    font-weight: 300;
+    border-radius: 50%;
+}
+
+#navleft p {
+    font-weight: 300;
+    opacity: .6;
+    color: #fff;
+}
+
+#navbar i {
+    margin-right: 180px;
+    background-color: #fff;
+    width: 30px;
+    font-size: 12px;
+    font-weight: 800;
+    height: 30px;
+    border-radius: 50%;
+    padding: 9px;
+}
+#text {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    padding: 0 10vw;
+}
+
+#text h1{
+    font-size: 6vw;
+    font-weight: 500;
+    color: #fff;
+}
+
+#text-right{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#text-right p {
+    font-size: 1.1rem;
+    width: 60%;
+}
+
+#text-heads p{
+    padding-bottom: 10px;
+}
+
+#iconT i{
+   margin-right: 7px;
+    
+}
+
+#bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+
+#b-one {
+    position: relative;
+    width: 20%;
+    min-height: inherit;
+    color: #000;  
+}
+
+#b-one h3 {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    font-weight: 500;
+    font-size: 18px;
+    opacity: .4;
+}
+#b-one p {
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    transform: translate(-50%,-50%);
+    font-size: 1.1rem;
+    width: 35%;
+    font-weight: 500;
+    opacity: .6;
+}
+
+#b-two {
+    width: 30%;
+    min-height: inherit;
+    background-image: url(https://images.pexels.com/photos/18254632/pexels-photo-18254632/free-photo-of-portrait-of-brunette-woman-in-black-and-white.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: 20% 25%;
+}
+#b-three {
+    width: 20%;
+    min-height: inherit;
+    background-color: green;
+}
+
+#b-threeTop {
+    color: #fff;
+    padding: 40px;
+    width: 100%;
+    min-height: 20vh;
+    background-color: orangered;
+}
+
+#b-three h4 {
+    margin-left: 20px;
+    font-weight: 500;
+    opacity: .8;
+}
+#b-threeTop p {
+    margin-left: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    opacity: .7;
+}
+
+
+#b-threeBottom {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(Images/OrangeandBlue.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+#b-four {
+    color: #fff;
+    width: 30%;
+    min-height: inherit;
+    background-color: #252525;
+    padding: 30px;
+}
+#b-four h3 {
+    font-weight: 400;
+    font-size: 20px;
+    opacity: .6;
+}
+.b-four-review #photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+.b-four-review p {
+    width: 60%;
+    font-weight: 200;
+    font-size: 15px;
+    opacity: .6;
+}
+
+.b-four-review {
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.b-four-review #comments {
+    margin-right: 60px;
+}
+
+#comments #date {
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .3;
+}
+
+@media(max-width: 500px) {
+   
+    #overlay {
+        width: initial;
+    }
+    #overlay #navbar{
+        position:absolute;    
+        width: initial;
+        top: 20px;
+    }
+    #overlat #navbar #navleft{
+       margin-left: 25px;
+    }
+    #overlay #navbar i{
+        margin-left: 20%;
+    }
+
+    #overlay #text {
+        position: absolute;
+        bottom: 15%;
+        left: 3%;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    #text h1{
+        font-size: 10vw;
+        margin-bottom: 5px;
+     }
+
+    #overlay #text #text-right {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+
+    }
+    #overlay #text #text-right p{
+        width: initial;
+        margin-top:4px;
+    }
+    #text-right #iconT {
+        margin-top: 10px;
+    }
+   
+    #bottom {
+        flex-direction: column;
+        min-height: 20vh;
+    }
+
+    #b-one {
+        width: 100%;
+    }
+    #b-one h3 {
+        margin-top: 25px;
+    }
+    #b-one p {
+        margin-top: 30px;
+    }
+
+    #b-two {
+        width: 100%;
+    }
+
+    #b-three {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #b-four {
+        width: 100%;
+    }
+}
